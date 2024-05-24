@@ -4,6 +4,7 @@ union demo
     int i;
     char ch[2];
     double c;
+    //int arr[14];
 };
 int main()
 {

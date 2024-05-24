@@ -9,7 +9,6 @@ union abc
  
 int main()
 {
-   
     var.b=253;
     var.a=(pow(2,15));
     var.c=12342421645234445;
