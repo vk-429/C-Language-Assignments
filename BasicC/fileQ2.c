@@ -33,10 +33,11 @@ int main()
     fptr=fopen("C:/File/Student.txt","a");
     for(int i=1;i<=5;i++)
     {
-        fprintf(fptr,"Name = %s\n",s[i].name);
-        fprintf(fptr,"Course name = %s\n",s[i].course);
-        fprintf(fptr,"Marks = %d\n",s[i].marks);
-        fprintf(fptr,"CGPA = %f\n",s[i].cgpa);
+        fprintf(fptr,"Name = %s            ",s[i].name);
+        fprintf(fptr,"Course name = %s     ",s[i].course);
+        fprintf(fptr,"Marks = %d           ",s[i].marks);
+        fprintf(fptr,"CGPA = %f            ",s[i].cgpa);
+        fprintf(fptr,"\n");
     }
     fclose(fptr);return 0;
 }

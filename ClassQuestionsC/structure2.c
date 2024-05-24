@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include <stdlib.h>
 //global definition
 struct book
 {
@@ -43,6 +44,7 @@ int main()
 {
     struct book b[5];
     int i;
+    //system("COLOR fc");
     for(i=0;i<=4;i++)
         b[i]=input();
     sortByPrice(b,5);

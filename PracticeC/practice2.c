@@ -11,14 +11,9 @@ int main()
     {
         printf("%d %d %d\n",*(*a+i),(a+i),(*a+i));
     }
-
-
-
-
     printf("\n\n\n\n\n");
 
-
-
+    
     int arr[]={1,2,3};
     int c[]={4,5,6,7};
     int *ptr[2];
@@ -28,34 +23,7 @@ int main()
         printf("Value of arr[%d] = %d\n",i,ptr[0][i]);
     for(i=0;i<4;i++)
         printf("Value of c[%d] = %d\n",i,ptr[1][i]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     printf("\n\n\n\n\n");
-
-
-
-
-
-
-
-
-
-
 
 
     char *name[]={"amit","amar","ankit","akhil"};

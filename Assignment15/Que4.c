@@ -18,19 +18,26 @@ void rotateND(int b[],int n1,int n,int d)
     for(i=0;i<n1;i++)
         scanf("%d",&b[i]);
     int c[n1];
+    n%=n1;
     for(i=0;i<n1;i++)
     {
         c[i]=b[i];
     }
     if(d==1)
     {
-        for(i=0;i<n1;i++)
+        i=0;
+        while(i<(n1-n))
         {
-            if(i<n1-n)
-                b[i]=c[n+i];
-            else
-                b[i]=c[(n+i)-n1];
+            b[i]=c[n+i];
             printf("%d ",b[i]);
+            i++;
+        }
+        int j=0;
+        while(j<n)
+        {
+            b[i]=c[j];
+            printf("%d ",b[i]);
+            i++;j++;
         }
     }
     if(d==0)

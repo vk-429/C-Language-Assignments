@@ -15,19 +15,22 @@ int main()
 }
 int findDupli(int b[],int n)
 {
-    int i;
+    int i,flag=0;
     printf("Enter array values : ");
     for(i=0;i<n;i++)
     {
         scanf("%d",&b[i]);
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     {
         if(b[i]==b[i+1])
+        {
+            flag=1;
             break;
+        }
     }
-    if(i==n)
-        return 0;
-    else
+    if(flag==1)
         return b[i];
+    else
+        return 0;
 }
