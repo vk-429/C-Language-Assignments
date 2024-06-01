@@ -20,6 +20,7 @@ int main()
         temp=abs(w2-w1);
         if(temp<min)
             min=temp;
+        if(min>(5-w2+w1)) min=5-w2+w1;
     }
     if(w1==w2)
     {

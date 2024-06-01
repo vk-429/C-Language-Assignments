@@ -5,7 +5,8 @@ int main()
     int m,n;
     printf("Enter no. of rows and columns of matrix : ");
     scanf("%d%d",&m,&n);
-    int i,j,a[m][n],b[m],c[m],count;
+    int i,j,a[m][n],count;
+    int ans=0,row_index=0;
     printf("Enter elements of matrix :-\n");
     for(i=0;i<m;i++)
     {
@@ -16,23 +17,12 @@ int main()
             if(a[i][j]==1)
                 count++;
         }
-        b[i]=count;
-        c[i]=b[i];
-    }
-    int count1;
-    for(i=0;i<m;i++)
-    {
-        count1=0;
-        for(j=0;j<m;j++)
-        {
-            if(c[i]>b[j])
-             count1++;
-        }
-        if(count1==(m-1))
-        {
-            printf("Row %d has maximum number of 1s",i);
-            break;
+        if(count>ans)
+        { 
+            ans=count;
+            row_index=i;
         }
     }
+    printf("Row %d has maximum number of 1s : %d times",row_index+1,ans);
     return 0;
 }

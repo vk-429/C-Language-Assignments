@@ -5,7 +5,7 @@ int main()
     int *p,n;
     printf("Enter the amount of memory in bytes, you want to allocate : ");
     scanf("%d",&n);
-    p=(int*)malloc(sizeof(int));
+    p=(int*)malloc(n*sizeof(char));
     if(p==NULL)
     {
         printf("Memory allocation failed !");

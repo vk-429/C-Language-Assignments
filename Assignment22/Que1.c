@@ -10,7 +10,7 @@ int main()
     {
         ch=getc(stdin);
         j++;
-        p=(char*)realloc(p,j*sizeof(char));
+        p=(char*)realloc(p,j*sizeof(char)); // also it will contain the previous data of p
         p[i]=ch;
         i++;
     }

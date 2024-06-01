@@ -13,8 +13,12 @@ int countWord(char s[])
     fgets(s,100,stdin);
     for(i=0;s[i];i++)
     {
-        if(s[i]==32&&s[i+1]!=32)
+        if(s[i]==' ')
+        {
+            while(s[i]==' ')i++;
+            i--;
             count++;
+        }
     }
     return count;
 }
