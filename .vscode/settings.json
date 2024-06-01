@@ -1,5 +1,5 @@
 {
-    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "arrayA15Q4M2.c": "c",
         "arrayA15Q10.c": "c"
