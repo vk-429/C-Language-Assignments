@@ -9,21 +9,22 @@ int main()
         {
             if(i<=3)
             {
-            if((j>=4-i&&j<=i+6)||(j>=14-i&&j<=i+16))
-                printf("*");
-            else
-                printf(" ");
+                if((j>=4-i&&j<=i+6)||(j>=14-i&&j<=i+16))
+                    printf("* ");
+                else
+                    printf("  ");
             }
             else if(i==4&&j==7)
-                printf("MySirG");
-            else if(i==4&&j>=7&&j<=12)
-                continue;
+            {
+                printf("M y S i r G ");
+                j+=5;
+            }
             else
             {
                 if(j>=i-3&&j<=23-i)
-                    printf("*");
+                    printf("* ");
                 else
-                    printf(" ");
+                    printf("  ");
             }
         }
         printf("\n");

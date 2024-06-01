@@ -18,9 +18,9 @@ void doMerge(int c[],int d[],int n)
     printf("Enter values of 2nd array : ");
     for(i=0;i<n;i++)
         scanf("%d",&d[i]);
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     {
-        for(j=i;j<n;j++)
+        for(j=i+1;j<n;j++)
         {
             if(c[i]<c[j])
             {
@@ -30,9 +30,9 @@ void doMerge(int c[],int d[],int n)
             }
         }
     }
-    for(i=0;i<n;i++)
+    for(i=0;i<n-1;i++)
     {
-        for(j=i;j<n;j++)
+        for(j=i+1;j<n;j++)
         {
             if(d[i]<d[j])
             {
@@ -42,21 +42,20 @@ void doMerge(int c[],int d[],int n)
             }
         }
     }
-    for(i=0;i<n;i++)
+    int p1=0,p2=0;
+    for(i=0;i<2*n;i++)
     {
-        for ( j=count;j<n;j++)
+        if(c[p1]>d[p2])
         {
-            if(c[i]<d[j])
-            {
-                M[j+count1]=d[j];
-                count++;
-            }
+            M[i]=c[p1];
+            p1++;
         }
-        M[i+count]=c[i];
-            count1++;
+        else
+        {
+            M[i]=d[p2];
+            p2++;
+        }
     }
-    for(j=count;j<n;j++)
-        M[count+n]=d[j];
     for(i=0;i<2*n;i++)
         printf("%d ",M[i]);
 }

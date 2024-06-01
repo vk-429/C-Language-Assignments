@@ -2,21 +2,21 @@
 
 int main()
 {
-    int n,i,j,count;
+    int n,i,j,count=1;
     printf("Enter the number : ");
     scanf("%d",&n);
-    for(i=1;i<=n;i++)
+    for(i=n+1;count;i++)
     {
-        n++,count=0;
-        for(j=1;j<=n;j++)
+        count=0;
+        for(j=2;j*j<=i;j++)
         {
-        if(n%j==0)
-        count++;
+            if (i%j==0)
+            {
+                count++;
+                break;
+            } 
         }
-        if(count==2)
-        break;
     }
-    if(count==2)
-    printf("Next prime number to the given number is %d",n);
+    printf("Next prime number to the given number is %d",i-1);
     return 0;
 }

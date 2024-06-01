@@ -19,7 +19,7 @@ int findnPN(int n)
         for(int j=1;j<=n;j++)
         {
             if(n%j==0)
-            count++;
+                count++;
         }
         if(count==2)
         return n;

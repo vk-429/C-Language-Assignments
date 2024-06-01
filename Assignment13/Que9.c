@@ -13,8 +13,5 @@ int countdigit(int n)
     if(n==0)
         return 0;
     if(n!=0)
-    {
-        n/=10;
-        return countdigit(n)+1;
-    }
+        return countdigit(n/10)+1;
 }

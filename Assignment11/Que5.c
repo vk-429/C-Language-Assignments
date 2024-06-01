@@ -10,28 +10,26 @@ int main()
 }
 void printPrime(int n)
 {
-    int prime=1,count,i,j,k;    
+    int prime=2,count=1,i,j,k;    
     if(n>0)
-    {    
-        printf("1\n");
-        for(i=1;i<n;i++)
+    {  
+        for(i=1;i<=n;i++)
         {
-            for(j=prime;;j++)
+            count=1;
+            for(j=prime;count;j++)
             {
                 count=0;
-                for(k=1;k<=j;k++)
+                for(k=2;k*k<=j;k++)
                 {
                     if(j%k==0)
+                    {
                         count++;
+                        break;
+                    }
                 }
-                if(count==2)
-                    break;
             }
-            if(count==2)
-            {
-                printf("%d\n",j);
-                prime=j+1;
-            }
+            printf("%d\n",j-1);
+            prime=j;
         }
     }
     else

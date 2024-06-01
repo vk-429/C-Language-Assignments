@@ -13,7 +13,7 @@ int main()
         b=a-b;
         a=a-b;
     }
-    while(a!=0)
+    while(a)
     {
         temp=a;
         a=b%a;

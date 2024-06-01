@@ -22,4 +22,5 @@ int checkDigit(int n,int d)
             return 1;
         n=n/10;
     }
+    return 0;
 }

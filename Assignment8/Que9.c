@@ -13,16 +13,16 @@ int main()
                 if(j<=4)
                 {
                     k++;
-                    printf("%d",k);
+                    printf(" %d",k);
                 }
                 else
                 {
                     k--;
-                    printf("%d",k);
+                    printf(" %d",k);
                 }
             }
             else
-                printf(" ");
+                printf("  ");
         }
         printf("\n");
     }

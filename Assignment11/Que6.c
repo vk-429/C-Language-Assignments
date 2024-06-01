@@ -19,7 +19,7 @@ void printPrime(int x,int y)
             if(i%j==0)
             count++;
         }
-        if(count==2||i==1)
+        if(count==2)
             printf("%d\n",i);
     }
 }

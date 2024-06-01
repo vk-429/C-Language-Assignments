@@ -13,12 +13,12 @@ int main()
                 if(j<=4)
                 {
                     k++;
-                    printf("%d",k);
+                    printf(" %d",k);
                 }
                 else
                 {
                     k--;
-                    printf("%d",k);
+                    printf(" %d",k);
                 }
             }
             else 
@@ -26,15 +26,15 @@ int main()
                 if(j<=5-i)
                 {
                     k++;
-                    printf("%d",k);
+                    printf(" %d",k);
                 }
                 else if(j>=i+3)
                 {
-                    printf("%d",k);
+                    printf(" %d",k);
                     k--;
                 }
                 else
-                    printf(" ");
+                    printf("  ");
             }
         }
         printf("\n");    

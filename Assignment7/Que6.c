@@ -3,17 +3,19 @@
 int main()
 {
     int i,j,flag;
-    for(i=1;i<=100;i++)
+    for(i=2;i<=100;i++)
     {
         flag=0;
-        for(j=1;j<=i;j++)
+        for(j=2;j*j<=i;j++)
         {
             if(i%j==0)
-                flag++;
+            {
+                flag=1;
+                break;
+            }
         }
-        if(flag==2||i==1)
+        if(flag==0)
             printf("%d\n",i);
-        
     }
     return 0;
 }

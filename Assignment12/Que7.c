@@ -1,18 +1,18 @@
 #include<stdio.h>
-void printODD(int);
+void printsquare(int);
 int main()
 {
     int n;
     printf("Enter any number : ");
     scanf("%d",&n);
-    printODD(n);
+    printsquare(n);
     return 0;
 }
-void printODD(int n)
+void printsquare(int n)
 {
     if(n>0)
     {
-        printODD(n-1);
+        printsquare(n-1);
         printf("%d\n",n*n);
     }
 } 

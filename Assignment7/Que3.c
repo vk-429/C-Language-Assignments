@@ -21,8 +21,7 @@ int main()
             {
                 printf("Given number does'nt exist in the fibonacci series");
                 break;
-            }
-            
+            }  
         }
     }
     else

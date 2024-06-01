@@ -13,9 +13,9 @@ void printBinary(int n)
     int x;
     if(n>0)
     {
-    x=n%2;
-    n=n/2;
-    printBinary(n);
-    printf("%d ",x);
+        x=n%2;
+        n=n/2;
+        printBinary(n);
+        printf("%d ",x);
     }
 }

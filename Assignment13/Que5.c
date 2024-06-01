@@ -14,8 +14,7 @@ int calcSD(int n)
     if(n>0)
     {
         r=n%10;
-        n=n/10;
-        sum=calcSD(n)+r;
+        sum=calcSD(n/10)+r;
     }
     return sum;
 }

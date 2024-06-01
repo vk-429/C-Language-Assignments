@@ -24,7 +24,5 @@ int calcHCF(int a,int b)
         b=temp;
         calcHCF(a,b);
     }
-    if(a==0)
-        return b;
-    
+    return b;
 }

@@ -21,7 +21,7 @@ void printUnique(int b[],int n)
     for(i=0;i<n;i++)
     {
         count=0;
-        for(j=i;j>=0;j--)
+        for(j=0;j<n;j++)
         {
             if(b[j]==b[i])
                 count++;

@@ -2,7 +2,7 @@
 
 int main()
 {
-    int n,i,j,SLN;
+    int n,i,j;
     printf("Enter no of values : ");
     scanf("%d",&n);
     int a[n];
